@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Avenir;
+    src: url(AvenirLTStd-Book.otf);
+}
+@font-face {
+    font-family: Lq;
+    src: url(LIQUIDISMPART2.TTF);
+}
+a,p,h1,h2{
+    font-family: Avenir;
+    color: white;
+}
+h1,h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 38px;
+    line-height: 52px;
+}
+p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.Smallp{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.Largep{
+    font-size: 20px;
+    line-height: 28px;
+    align-items: center;
+}
+body{
+    background-image: url(img/Pink\ Background-01\ 1.png);
+}
+.subtitle{
+    font-size: 28px;
+    line-height: 38px;
+    color: white;
+}
+.primary-button{
+    background-color:#E65857 ;
+    border-radius: 6px;
+    letter-spacing: 0.1em;
+    color: white;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    padding: 9px 35px 8px 35px;
+    font-family: Avenir;
+    font-size: 16px;
+    line-height: 21px;
+}
+.primary-button:hover{
+    transition: 500ms;
+    background-color: #fff ;
+    color: #E65857;
+}
+.header{
+    padding: 100px 0 40px 0;;
+}
+
+.transparent-container{
+    background-color: rgba(255,255,255, 10%);
+    margin:40px 0 40px 0;
+    padding: 80px 0 80px 0;
+    border-radius: 20px;
+    box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.1);
+}
+.number-container{
+    max-width: 384px;
+    margin: auto;
+}
+
+.liquid{
+    -webkit-text-stroke: 3px #fff; /* width and color */
+    font-family: Lq; color: #FFBEBE;
+    font-size: 56px;
+    line-height: 56px;
+}
+.container2{
+    max-width: 1280px;
+    margin:0 auto 0 auto;
+}
+
+
+@media only screen and (max-widht:900px) {
+    .container{
+        padding:0 30px;
+    }
+    .transparent-container{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    
+    h1,h2{
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 28px;
+        line-height: 48px;
+    }
+    .transparent-container{
+        padding: 30px;
+        margin-bottom: 100px;
+    }
+    .Smallp{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .subtitle{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .number-container{
+        margin-bottom: 80px;
+    }
+    #dalmantion{
+        order: 1;
+        margin-top: -80px;
+    }
+    #dalmantion-text{
+        order: 2;
+    }
+    .head{
+        text-align: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .container{
+        padding:0 20px;
+    }
+    .transparent-container{
+        padding: 20px;
+    }
+    h2{
+        font-size: 248px;
+        line-height:2px;
+    }
+    .Smallp{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .subtitle{
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
