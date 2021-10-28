@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <!-- for Facebook OGP -->
     <meta property="og:url" content="link to page" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Title" />
@@ -18,140 +18,330 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+    font-family: Avenir;
+    src: url(AvenirLTStd-Book.otf);
+}
+@font-face {
+    font-family: Lq;
+    src: url(LIQUIDISMPART2.TTF);
+}
+a,p,h1,h2{
+    font-family: Avenir;
+    color: white;
+}
+h1,h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 38px;
+    line-height: 52px;
+}
+p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.Smallp{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.Largep{
+    font-size: 20px;
+    line-height: 28px;
+    align-items: center;
+}
+body{
+    background-image: url(img/Pink\ Background-01\ 1.png);
+}
+.subtitle{
+    font-size: 28px;
+    line-height: 38px;
+    color: white;
+}
+.primary-button{
+    background-color:#E65857 ;
+    border-radius: 6px;
+    letter-spacing: 0.1em;
+    color: white;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    padding: 9px 35px 8px 35px;
+    font-family: Avenir;
+    font-size: 16px;
+    line-height: 21px;
+}
+.primary-button:hover{
+    transition: 500ms;
+    background-color: #fff ;
+    color: #E65857;
+}
+.header{
+    padding: 100px 0 40px 0;;
+}
+
+.transparent-container{
+    background-color: rgba(255,255,255, 10%);
+    margin:0 auto 50px auto;
+    padding: 80px 0 80px 0;
+    border-radius: 20px;
+    box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.1);
+}
+.number-container{
+    max-width: 384px;
+    margin: auto;
+}
+
+.liquid{
+    -webkit-text-stroke: 3px #fff; /* width and color */
+    font-family: Lq; color: #FFBEBE;
+    font-size: 56px;
+    line-height: 56px;
+}
+
+.mobile-version{
+    display: none;
+}
+
+@media only screen and (max-width:767px) {
+    
+    h1,h2{
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 28px;
+        line-height: 48px;
+    }
+    .transparent-container{
+        margin-bottom: 100px;
+    }
+    .Smallp{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .subtitle{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .number-container{
+        margin-bottom: 80px;
+    }
+    #dalmantion{
+        order: 1;
+        margin-top: -160px;
+    }
+    #dalmantion-text{
+        order: 2;
+    }
+    .head{
+        text-align: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .mobile-version{
+        display: block;
+    }
+    .desktop-version{
+        display: none;
+    }
+}
+@media only screen and (max-width: 575px){
+    .container{
+        padding: 0 60px 0 60px;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .container{
+        padding:0 60px 0 60px;
+    }
+    h2{
+        font-size: 24px;
+        line-height:32px;
+    }
+    .Smallp{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .subtitle{
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+    </style>
 
 </head>
 
 <body>
-    <img src="img/Logo.png" alt="" style="position: absolute; top:30px; right: 20px;">
+    <div style="width: 100%;" >
+        <img src="img/Logo.png" alt="" style="position: absolute; top:30px; right: 20px;">
     <div class="container">
-
         <div class="row">
-            <div class="col-md-1"></div>
-
-            <div class="col-md-10">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
                 <div class="header" style="padding-bottom:80px;">
                     <div class="row">
-                        <div class="col-md-6 class head">
+                        <div class="col-md-6">
                             <img src="img/Toxic Foods.png" alt="" class="img-fluid">
                             <h1 class="hides" style="display: none;">Toxic Foods</h1>
-                                <p class="subtitle">and what they do to our dogs bodies</p>       
+                            <p class="subtitle">and what they do to our dogs bodies</p>       
                         </div>
                         <div class="col-md-6 head">
-                                <img src="img/dog.png" alt="" class="img-fluid">
+                            <img src="img/dog.png" alt="" class="img-fluid">
                         </div>
                     </div>
                     <a href="#about-desc"><button class="primary-button">Explore</button></a>
                 </div>
-                <div id="about-desc" class="" style="margin-bottom: 20px;">
+                <div id="about-desc" class="desktop-version" style="margin-bottom: 20px;">
                     <h2>Do you know which foods are toxic to your pet?</h2>
-                    <p>"If you think your pet has eaten something that might be dangerous to them, stay calm and try not to panic.The best course of action is always to call the vet for advice right away, even if it’s the middle of the night or a weekend.</p>
-                        <p>For many toxins, rapid treatment can prevent them from causing serious harm and in some cases could save their lives." </p>
-                        <p><i>Dr Charley Webb - Vet and Nutritionist at VetChef.com</i></p>
-                </div>
-                <div>
-                    <img src="img/dog-template" alt="">
-                </div>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-    </div>
-
-
-    <div class="container2">
-        <div class="transparent-container">
-            <div class="row">
-                <h1 class="text-center"><I>place holder for Jquery</I> </h1>
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <img src="img/dog placeholder" alt="" class="img-fluid" style="max-height: 421px;">
-                </div>
-
-                <div class="col-md-5">
-                    <img src="img/CHOOSE FOOD.png" alt="" class="img-fluid">
-                    <div class="row text-center" style="margin-top: 90px;">
-                        <div class="col-md-4">
-                            <img src="img/Apple Seeds@2x.png" alt="" class="img-fluid" style="max-height:77px;">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/Gum@2x.png" alt="" class="img-fluid" style="max-height: 51px;">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/Coffee@2x.png" alt="" class="img-fluid" style="max-height: 90px;">
-                        </div>
-                    </div>
-                    <div class="row text-center" style="margin-top: 90px;">
-                        <div class="col-md-4">
-                            <img src="img/Onion@2x.png" alt="" class="img-fluid" style="max-height:80px;">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/Garlic@2x.png" alt="" class="img-fluid" style="max-height: 100px;">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/Grapes@2x.png" alt="" class="img-fluid" style="max-height: 78px;">
-                        </div>
-                    </div>
-                    <div class="row text-center" style="margin-top: 90px;"> 
-                        <div class="col-md-4">
-                            <img src="img/Mouldy food@2x.png" alt="" class="img-fluid" style="max-height:94px;">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/Alcohol@2x.png" alt="" class="img-fluid" style="max-height: 101px;">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/Chocolate@2x.png" alt="" class="img-fluid" style="max-height: 92px;">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-
-            </div>
-        </div>
-
-        <div class="row" style="padding: 20px 0;">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <div class="row">
-                    <div class="col-md-6 text-center number-container
-                    ">
-                        <img src="img/29.png" alt="" class="img-fluid">
-                        <p class=" Largep">Have fed their dog one of these foods, not knowing that they are toxic</p>
-                    </div>
-
-                    <div class="col-md-6 text-center number-container">
-                        <img src="img/47.png" alt="" class="img-fluid">
-                        <p class=" Largep">of dog owners wouldn’t know what would happen to their dog if they ate one of these foods</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-1"></div>
-        </div>
-
-  
-        <div class="transparent-container">
-            <div class="row">
-                <div class="col-md-1"></div>
-
-                <div class="col-md-5" id="dalmantion-text">
-                    <h2>What to do if your dog eats something they shouldn’t</h2>
-                    <p>"If you think your pet has eaten something that might be dangerous to them, stay calm and try not to panic.The best course of action is always to call the vet for advice right away, even if it’s the middle of the night or a weekend.</p>
+                    <p>We’ve worked with a top vet and animal nutritionist to uncover the foods most harmful to our beloved pooches and how they are affected by them. We’ve also surveyed pet owners across the nation to see if they knew these toxic foods could cause harm, and if they’ve ever accidentally fed them to their canine companions.</p>
                     <p>For many toxins, rapid treatment can prevent them from causing serious harm and in some cases could save their lives." </p>
                     <p><i>Dr Charley Webb - Vet and Nutritionist at VetChef.com</i></p>
                 </div>
-
-                <div class="col-md-5" id="dalmantion">
-                    <img src="img/dalmantion.png" alt="" class="img-fluid">
+                <div>
                 </div>
-                <div class="col-md-1"></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <img src="img/walking-dog.gif" alt="" class="img-fluid desktop-version">
+    </div>
 
+
+    <div class="mobile-version" style="width: 100%; margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <h2>Do you know which foods are toxic to your pet?</h2>
+                    <p>We’ve worked with a top vet and animal nutritionist to uncover the foods most harmful to our beloved pooches and how they are affected by them. We’ve also surveyed pet owners across the nation to see if they knew these toxic foods could cause harm, and if they’ve ever accidentally fed them to their canine companions.</p>
+                </div>
+                <div class="col-sm-1"></div>
             </div>
         </div>
-        <div class="text-center">
-            <img src="img/Artboard-Copy-3.png" alt="" style=" margin-bottom:40px;">
+        <img src="img/walking-dog.gif" alt="" class="img-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <p>
+                        Want to see for yourself? Swipe down to the dog illustration and click on the foods to see how our dog’s bodies are affected upon consumption of these toxic treats. You’ll see a percentage, which highlights the amount of pet owners who didn’t know these foods were toxic to their dogs.
+                    </p>
+                    <p>
+                        And don’t fret – a vet’s advice will tell you exactly what to do if your beloved pooch accidentally eats something they shouldn’t.
+                    </p>
+                    
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
         </div>
-
     </div>
+    
+
+
+
+    <div style="width: 100%;" class="transparent-container"> 
+        <div class="container">
+            <div>
+                <div class="row">
+                    <h1 class="text-center"><I>place holder for Jquery</I> </h1>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <img src="img/dog placeholder" alt="" class="img-fluid" style="max-height: 421px;">
+                    </div>
+    
+                    <div class="col-sm-5">
+                        <img src="img/CHOOSE FOOD.png" alt="" class="img-fluid">
+                        <div class="row text-center" style="margin-top: 90px;">
+                            <div class="col-md-4">
+                                <img src="img/Apple Seeds@2x.png" alt="" class="img-fluid" style="max-height:77px;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/Gum@2x.png" alt="" class="img-fluid" style="max-height: 51px;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/Coffee@2x.png" alt="" class="img-fluid" style="max-height: 90px;">
+                            </div>
+                        </div>
+                        <div class="row text-center" style="margin-top: 90px;">
+                            <div class="col-md-4">
+                                <img src="img/Onion@2x.png" alt="" class="img-fluid" style="max-height:80px;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/Garlic@2x.png" alt="" class="img-fluid" style="max-height: 100px;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/Grapes@2x.png" alt="" class="img-fluid" style="max-height: 78px;">
+                            </div>
+                        </div>
+                        <div class="row text-center" style="margin-top: 90px;"> 
+                            <div class="col-md-4">
+                                <img src="img/Mouldy food@2x.png" alt="" class="img-fluid" style="max-height:94px;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/Alcohol@2x.png" alt="" class="img-fluid" style="max-height: 101px;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/Chocolate@2x.png" alt="" class="img-fluid" style="max-height: 92px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row" style="padding: 20px 0;">
+        <div class="col"></div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-md-5 text-center number-container
+                ">
+                <img src="img/29.png" alt="" class="img-fluid">
+                <p class=" Largep">Have fed their dog one of these foods, not knowing that they are toxic</p>
+            </div>
+
+            <div class="col-md-5 text-center number-container">
+                <img src="img/47.png" alt="" class="img-fluid">
+                <p class=" Largep">of dog owners wouldn’t know what would happen to their dog if they ate one of these foods</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col"></div>
+</div>
+
+<div style="width: 100%;"  class="transparent-container">
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+
+            <div class="col-md-5" id="dalmantion-text">
+                <h2>What to do if your dog eats something they shouldn’t</h2>
+                <p>"If you think your pet has eaten something that might be dangerous to them, stay calm and try not to panic.The best course of action is always to call the vet for advice right away, even if it’s the middle of the night or a weekend.</p>
+                <p>For many toxins, rapid treatment can prevent them from causing serious harm and in some cases could save their lives." </p>
+                <p><i>Dr Charley Webb - Vet and Nutritionist at VetChef.com</i></p>
+            </div>
+
+            <div class="col-md-5" id="dalmantion">
+                <img src="img/Dalmation.gif" alt="" class="img-fluid">
+            </div>
+            <div class="col"></div>
+
+        </div>
+    </div>
+
+</div>
+    
+    <div class="text-center">
+        <img src="img/Artboard-Copy-3.png" alt="" style=" margin-bottom:40px;">
+    </div>
+
+</div>
 </body>
 </html>
